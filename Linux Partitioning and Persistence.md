@@ -77,18 +77,3 @@ The address file still exists in /mnt/mypartition**
   cat /mnt/mypartition/address
   ```
 
----
-
-## 📷 Including the Image on GitHub
-
-If your original PDF had an image you'd like to include, make sure to upload it to your GitHub repo and reference it like this:
-
-```markdown
-![Partition Setup](images/partition_screenshot.png)
-```
-
-Replace `images/partition_screenshot.png` with the correct relative path to your image file.
-
----
-
-> ✅ After reboot, the partition should still exist, be mounted, and contain the `address` file.
