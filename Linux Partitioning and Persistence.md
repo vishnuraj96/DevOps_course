@@ -59,12 +59,12 @@
 
   Add a line in this format:
   ```
-  /dev/sda4  /mnt/mypartition  ext3  defaults  0  2
+  /dev/sda4  /mnt/mypartition  ext3  defaults  0  0
   ```
 
-- **Reboot the system and verify that:
+- **Reboot the system and verify that:**
 
-The partition is mounted automatically
+The partition is mounted automatically.
 The address file still exists in /mnt/mypartition**
   ```bash
   reboot
