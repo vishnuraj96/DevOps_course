@@ -6,7 +6,7 @@
   ```bash
   fdisk -l
   ```
-  ＜img src="https://github.com/vishnuraj96/DevOps_course/blob/1a60b80f809e192d6c008094cd3112a505d797eb/image/Picture1.png" width="500" height="300"＞
+＜img src="https://github.com/vishnuraj96/DevOps_course/blob/1a60b80f809e192d6c008094cd3112a505d797eb/image/Picture1.png" width="500" height="300"＞
   
 - **Create a new partition:**
   ```bash
