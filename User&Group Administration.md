@@ -10,7 +10,7 @@ groupadd engineers
 ```
 
 - Create two users:
-  - devuser1: Add to group engineers, set /bin/bash as default shell, and set a comment "Developer One".
+  - 'devuser1': Add to group engineers, set /bin/bash as default shell, and set a comment "Developer One".
 
 ```bash
 useradd -m devuser1 -c “Developer One” -s /bin/bash
