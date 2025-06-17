@@ -109,6 +109,7 @@ chage -l devuser2
 
 ## 6. Cleanup
 
+Unlock devuser2 and remove both users (devuser1, devuser2) along with their home directories.
 - Unlock devuser2
 
 ```bash
@@ -116,18 +117,23 @@ usermod -U devuser2
 ```
 ![image alt](image/5.13.png)
 
-- Remove both users along with their home directories
+Remove both users along with their home directories
 
+- For devuser1
+  
 ```bash
 userdel -r devuser1
 ```
 ![image alt](image/5.14.png)
+
+- For devuser2
+  
 ```bash
 userdel -r devuser2
 ```
 ![image alt](image/5.15.png)
 
-- Delete the engineers group.
+Delete the engineers group.
 
 ```bash
 groupdel engineers
