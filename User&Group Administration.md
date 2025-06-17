@@ -8,13 +8,13 @@
 groupadd engineers
 ```
 - Create two users:
-1. `devuser1`: Add to group `engineers`, set `/bin/bash` as default shell, and set a comment `"Developer One"`.
+`devuser1`: Add to group `engineers`, set `/bin/bash` as default shell, and set a comment `"Developer One"`.
 ```bash
 useradd -m devuser1 -c “Developer One” -s /bin/bash
 ```
 ![image alt](image/5.1.png)
  
-2. `devuser2`: Add to group `engineers`, with a custom home directory `/customhome/devuser2`.
+`devuser2`: Add to group `engineers`, with a custom home directory `/customhome/devuser2`.
 ```bash
 mkdir /customhome/devuser2
 useradd -m -d /customhome/devuser2 devuser2
@@ -76,13 +76,13 @@ usermod -L devuser2
 
 - Use commands to verify:
 
--- Group membership
+ Group membership
 ```bash
 vim /etc/group
 ```
 ![image alt](image/5.8.png)
 
--- Password aging policies
+ Password aging policies
 ```bash
 chage -l devuser1
 ```
@@ -92,13 +92,13 @@ chage -l devuser2
 ```
 ![image alt](image/5.10.png)
 
--- Sudo access
+ Sudo access
 ```bash
 sudo -l -U devuser1
 ```
 ![image alt](image/5.11.png)
 
--- Account expiration
+ Account expiration
 ```bash
 chage -l devuser1
 chage -l devuser2
