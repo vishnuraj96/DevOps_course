@@ -19,8 +19,9 @@ useradd -m devuser1 -c “Developer One” -s /bin/bash
 mkdir /customhome/devuser2
 useradd -m -d /customhome/devuser2 devuser2
 ```
----
+![image alt](image/5.2.png)
 
+---
 ## 2. Set Passwords and Apply Password Policies
 
 - Set a password for both users.
