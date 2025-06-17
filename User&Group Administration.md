@@ -8,11 +8,11 @@
 groupadd engineers
 ```
 - Create two users:
-  - `devuser1`: Add to group `engineers`, set `/bin/bash` as default shell, and set a comment `"Developer One"`.
+1. `devuser1`: Add to group `engineers`, set `/bin/bash` as default shell, and set a comment `"Developer One"`.
 ```bash
 useradd -m devuser1 -c “Developer One” -s /bin/bash
 ```
-  - `devuser2`: Add to group `engineers`, with a custom home directory `/customhome/devuser2`.
+2. `devuser2`: Add to group `engineers`, with a custom home directory `/customhome/devuser2`.
 ```bash
 mkdir /customhome/devuser2
 useradd -m -d /customhome/devuser2 devuser2
