@@ -15,7 +15,7 @@ groupadd engineers
 ```bash
 useradd -m devuser1 -c “Developer One” -s /bin/bash
 ```
-
+-
   - devuser2: Add to group engineers, with a custom home directory /customhome/devuser2.
 
 ```bash
