@@ -9,7 +9,7 @@ APT is used for installing, upgrading, and removing packages.
 ```bash
 sudo apt update
 ```
-![image alt](https://github.com/vishnuraj96/DevOps_course/blob/1a60b80f809e192d6c008094cd3112a505d797eb/image/6.1.png)
+![image alt](https://github.com/vishnuraj96/DevOps_course/blob/464fce224d8734ae0bbf05dd2a8192c8260079d5/image/6.1.png)
 
 ### Upgrade all packages:
 ```bash
