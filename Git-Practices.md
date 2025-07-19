@@ -88,6 +88,7 @@ git push -u origin feature/my-feature
 **2. Simulate a merge conflict intentionally (modify the same line in both branches).**
 
 **Create conflict:**
+
 A) In the main branch
 ```bash
 git checkout main
