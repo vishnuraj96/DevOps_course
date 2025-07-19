@@ -109,7 +109,7 @@ git checkout main
 git merge conflict_branch
 ```
  
-3. Resolve the conflict and complete the merge.
+**3. Resolve the conflict and complete the merge.**
 ```bash
 vim conflict.txt (Open conflict.txt)
 ```
@@ -127,8 +127,8 @@ git add conflict.txt
 git commit
 ```
 
-Rebase: 
-1. Create a new branch.
+**Rebase:**
+A. Create a new branch.
 
 ```bash
 git checkout main
@@ -136,7 +136,7 @@ git pull
 git checkout -b rebase-branch
 ```
 
-3. Make some changes.
+B. Make some changes.
    
 ```bash
 echo "Change for rebase" > rebase.txt
@@ -144,14 +144,14 @@ git add rebase.txt
 git commit -m "Add change for rebase"
 ```
 
-4. Rebase the new branch onto the main branch.
+C. Rebase the new branch onto the main branch.
 
 ```bash
 git checkout rebase-branch
 git rebase main
 ```
 
-5. Resolve any conflicts that may arise during the rebase.
+D. Resolve any conflicts that may arise during the rebase.
 
 - Step 1: Git will pause on a conflict.
 - Step 2: Open and fix the conflict.
@@ -165,19 +165,26 @@ git rebase –continue
 git push --force origin rebase-branch
 ```
  
-Assignment 3: Collaboration
-Fork and Pull Request: 
-1. Fork a repository on GitHub.
-	Step 1: Go to a GitHub project repository
-Step 2: Click the "Fork" button in the upper-right corner to copy the repo to your GitHub account.
-2. Clone the forked repository to your local machine.
+## Assignment 3: Collaboration
+**Fork and Pull Request:**
+**1. Fork a repository on GitHub.**
+- Step 1: Go to a GitHub project repository
+- Step 2: Click the "Fork" button in the upper-right corner to copy the repo to your GitHub account.
+
+**2. Clone the forked repository to your local machine.**
+
+```bash
 git clone https://github.com/vishnuraj96/Assignment.git
 cd Assignment
- 
-3. Create a new branch and make changes.
+```
+
+**3. Create a new branch and make changes.**
+
+```bash
 git checkout -b feature
 git add .
 git commit -m "Add new feature or fix"
+```
  
 4. Push the branch to your fork.
 	git push origin feature
