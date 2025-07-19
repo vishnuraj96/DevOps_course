@@ -63,6 +63,7 @@
  	```
   
 **3. Make changes in the new branch.**
+
 	```bash
  	echo "My GitLab feature" > feature.txt
 	git add feature.txt
@@ -70,6 +71,7 @@
  	```
 
 **4. Push the branch to the remote repository.**
+
 	```bash
 	git push -u origin feature/my-feature
  	```
