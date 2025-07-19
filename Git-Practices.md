@@ -177,60 +177,67 @@ git commit -m "Add new feature or fix"
 ```
  
 **4. Push the branch to your fork.**
-```bas
+```bash
 git push origin feature
 ```
  
-***5. Open a pull request to merge your changes into the original repository.***
-	Step 1: Go to your forked repo on GitHub.
-	Step 2: Start the Pull Request, click “Contribute” → “Open pull request”.
-	Step 3: Fill in Pull Request Details like Title and Description. Click the “Create pull request”
+**5. Open a pull request to merge your changes into the original repository.**
+- Step 1: Go to your forked repo on GitHub.
+- Step 2: Start the Pull Request, click “Contribute” → “Open pull request”.
+- Step 3: Fill in Pull Request Details like Title and Description. Click the “Create pull request”
  
-Code Review: 
-1. Review a pull request in a repository.
-	Step 1: Go to a repository where you have permission to review PRs.
-Step 2: Click on the Pull Requests tab.
-Step 3: Select a PR to review.
-2. Provide constructive feedback on the changes.
-	Step 1: Use GitHub’s review tools to add comments to specific lines.
-Step 2: Highlight:
-•	Code clarity issues
-•	Logic or functionality bugs
-•	Styling or formatting improvements
-3. Discuss improvements or changes with the author.
-Step 1: Engage politely in the conversation tab.
-Step 2: Ask questions if needed, and suggest alternatives.
-Step 3: Be respectful and clear.
-Collaborative Workflow: 
-1. Set up a repository collaboratively with a partner.
-	Step 1: Go to GitHub, Click + (top right) → New repository.
-	Step 2: Name your repo and choose settings (public/private, README, etc.)
-	Step 3: Click Create repository.
-	Step 4: On the repo page, go to Settings → Collaborators.
-	Step 5: Click Add people.
-	Step 6: Enter your partner’s GitHub username, full name or email.
-	Step 7: Click Add to repository
-2. Establish a workflow for making changes, creating branches, and merging.
-	Step 1: Clone the repo and set up.
-		git clone https://github.com/vishnuraj96/workflow.git
-		cd workflow
-		git checkout -b develop
+## Code Review: 
+**1. Review a pull request in a repository.**
+- Step 1: Go to a repository where you have permission to review PRs.
+- Step 2: Click on the Pull Requests tab.
+- Step 3: Select a PR to review.
+  
+**2. Provide constructive feedback on the changes.**
+- Step 1: Use GitHub’s review tools to add comments to specific lines.
+- Step 2: Highlight:
+	- Code clarity issues
+	- Logic or functionality bugs
+	- Styling or formatting improvements
  
-Step 2: Create a Branch.
-		git checkout -b add-user
- 
-	Step 3: Make changes and commit.
-		git add .
-		git commit -m "Add user authentication"
- 
-	Step 4: Push branch
-		git push -u origin add-user
- 
-	Step 5:  Pull Request (PR)
-		Go to your forked repo on GitHub.
-		Start the Pull Request, click “Contribute” → “Open pull request”.
-		Fill in Pull Request Details like Title and Description. Click the “Create pull request”
+**3. Discuss improvements or changes with the author.**
+- Step 1: Engage politely in the conversation tab.
+- Step 2: Ask questions if needed, and suggest alternatives.
+- Step 3: Be respectful and clear.
 
+## Collaborative Workflow:
+**1. Set up a repository collaboratively with a partner.**
+- Step 1: Go to GitHub, Click + (top right) → New repository.
+- Step 2: Name your repo and choose settings (public/private, README, etc.)
+- Step 3: Click Create repository.
+- Step 4: On the repo page, go to Settings → Collaborators.
+- Step 5: Click Add people.
+- Step 6: Enter your partner’s GitHub username, full name or email.
+- Step 7: Click Add to repository
+  
+**2. Establish a workflow for making changes, creating branches, and merging.**
+- Step 1: Clone the repo and set up.
+```bash
+git clone https://github.com/vishnuraj96/workflow.git
+cd workflow
+git checkout -b develop
+``` 
+- Step 2: Create a Branch.
+```bash
+git checkout -b add-user
+```
+- Step 3: Make changes and commit.
+```bash
+git add .
+git commit -m "Add user authentication"
+```
+- Step 4: Push branch
+```bash
+git push -u origin add-user
+```
+- Step 5:  Pull Request (PR)
+	- Go to your forked repo on GitHub.
+	- Start the Pull Request, click “Contribute” → “Open pull request”.
+	- Fill in Pull Request Details like Title and Description. Click the “Create pull request”
 
 ## Assignment 4: Advanced Git Concepts
 
