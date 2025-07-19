@@ -54,16 +54,16 @@
 - Step 1: Go to your GitLab project and click on “Repository” from the “Code” dropdown in the left menu.
 - Step 2: Click Code and copy the HTTPS or SSH URL.
 - Step 3: In terminal:
-	git clone https://gitlab.com/vishnuraj784-group/assignment.git
-     	cd assignment
+	- git clone https://gitlab.com/vishnuraj784-group/assignment.git
+	- cd assignment
  
-2. Create a new branch for a specific feature or bug fix.
-	git checkout -b feature/my-feature
+**2. Create a new branch for a specific feature or bug fix.**
+	- git checkout -b feature/my-feature
  
-3. Make changes in the new branch.
-	echo "My GitLab feature" > feature.txt
-git add feature.txt
-git commit -m "Add feature.txt in feature/my-feature"
+**3. Make changes in the new branch.**
+	- echo "My GitLab feature" > feature.txt
+	- git add feature.txt
+	- git commit -m "Add feature.txt in feature/my-feature"
  
 
 
