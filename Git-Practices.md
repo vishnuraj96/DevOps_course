@@ -7,7 +7,9 @@
 
 **1. How do you create a new branch in GitLab using the web interface?**
 - Step 1: Click on “New Project” to create a new project.  
-- Step 2: Click on the “+” icon, then under “This repository”, click on “New branch” to create a new branch.  
+- Step 2: Click on the “+” icon, then under “This repository”, click on “New branch” to create a new branch.
+![image alt](image/8.1.png)
+
 - Step 3: Enter a branch name and select the source branch (typically main or master).  
 - Step 4: Click “Create branch”.
 
