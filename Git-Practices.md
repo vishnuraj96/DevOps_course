@@ -56,73 +56,90 @@
  	git clone https://gitlab.com/vishnuraj784-group/assignment.git
 	cd assignment
  	```
+ 
 **2. Create a new branch for a specific feature or bug fix.**
-	- git checkout -b feature/my-feature
- 
+	```bash
+ 	git checkout -b feature/my-feature
+ 	```
+  
 **3. Make changes in the new branch.**
-	- echo "My GitLab feature" > feature.txt
-	- git add feature.txt
-	- git commit -m "Add feature.txt in feature/my-feature"
- 
+	```bash
+ 	echo "My GitLab feature" > feature.txt
+	git add feature.txt
+	git commit -m "Add feature.txt in feature/my-feature"
+ 	```
 
-
-
-
-4. Push the branch to the remote repository.
+**4. Push the branch to the remote repository.**
+	```bash
 	git push -u origin feature/my-feature
+ 	```
  
-Merge and Conflict Resolution: 
-1. Merge the changes from the feature branch into the main branch.
-Step 1: Go to your GitLab project and click on “Merge Requests” in the left menu.
-Step 2: Click on “New merge request”.
-Step 3: Choose feature/my-feature → main.
+### Merge and Conflict Resolution: 
+**1. Merge the changes from the feature branch into the main branch.**
+- Step 1: Go to your GitLab project and click on “Merge Requests” in the left menu.
+- Step 2: Click on “New merge request”.
+- Step 3: Choose feature/my-feature → main.
  
-Step 4: Submit the merge request, then Merge it using the UI or command line.
-2. Simulate a merge conflict intentionally (modify the same line in both branches).
-Create conflict: 
+- Step 4: Submit the merge request, then Merge it using the UI or command line.
+  
+**2. Simulate a merge conflict intentionally (modify the same line in both branches).**
+**Create conflict:**
 A) In the main branch
+```bash
 git checkout main
 echo "Line to cause conflict" > conflict.txt
 git add conflict.txt
 git commit -m "Edit line in conflict.txt from main"
- 
+```
+
 B) In a new branch
+```bash
 git checkout -b conflict-branch
 echo "Conflicting change" > conflict.txt
 git add conflict.txt
 git commit -m "Conflicting change from conflict-branch"
- 
+```
+
 C) Try merging into main:
+```bash
 git checkout main
 git merge conflict_branch
+```
  
 3. Resolve the conflict and complete the merge.
+```bash
 	vim conflict.txt (Open conflict.txt)
 <<<<<<< HEAD
 Line to cause conflict
 =======
 Conflicting change
 >>>>>>> conflict-branch
+```
 
 After resolving:
+```bash
 git add conflict.txt
 git commit
+```
+
 Rebase: 
 1. Create a new branch.
-	git checkout main
+```bash
+git checkout main
 git pull
 git checkout -b rebase-branch
- 
-2. Make some changes.
+```
+
+3. Make some changes.
 echo "Change for rebase" > rebase.txt
 git add rebase.txt
 git commit -m "Add change for rebase"
  
-3. Rebase the new branch onto the main branch.
+4. Rebase the new branch onto the main branch.
 git checkout rebase-branch
 git rebase main
  
-4. Resolve any conflicts that may arise during the rebase.
+5. Resolve any conflicts that may arise during the rebase.
 Step 1: Git will pause on a conflict.
 Step 2: Open and fix the conflict.
 Step 3: 
