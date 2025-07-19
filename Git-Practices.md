@@ -158,6 +158,7 @@ git push --force origin rebase-branch
  
 ## Assignment 3: Collaboration
 **Fork and Pull Request:**
+
 **1. Fork a repository on GitHub.**
 - Step 1: Go to a GitHub project repository
 - Step 2: Click the "Fork" button in the upper-right corner to copy the repo to your GitHub account.
@@ -175,10 +176,12 @@ git add .
 git commit -m "Add new feature or fix"
 ```
  
-4. Push the branch to your fork.
-	git push origin feature
+**4. Push the branch to your fork.**
+```bas
+git push origin feature
+```
  
-5. Open a pull request to merge your changes into the original repository.
+***5. Open a pull request to merge your changes into the original repository.***
 	Step 1: Go to your forked repo on GitHub.
 	Step 2: Start the Pull Request, click “Contribute” → “Open pull request”.
 	Step 3: Fill in Pull Request Details like Title and Description. Click the “Create pull request”
