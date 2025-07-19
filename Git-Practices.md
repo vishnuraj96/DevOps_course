@@ -85,8 +85,9 @@ git push -u origin feature/my-feature
  
 - Step 4: Submit the merge request, then Merge it using the UI or command line.
   
-**2. Simulate a merge conflict intentionally (modify the same line in both branches).
-Create conflict:**
+**2. Simulate a merge conflict intentionally (modify the same line in both branches).**
+
+**Create conflict:**
 A) In the main branch
 ```bash
 git checkout main
