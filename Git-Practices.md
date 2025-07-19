@@ -10,13 +10,17 @@
 - Step 2: Click on the “+” icon, then under “This repository”, click on “New branch” to create a new branch.
 ![image alt](image/8.1.png)
 
-- Step 3: Enter a branch name and select the source branch (typically main or master).  
+- Step 3: Enter a branch name and select the source branch (typically main or master).
+![image alt](image/8.2.png)
+  
 - Step 4: Click “Create branch”.
 
 **2. What steps do you follow to create a Merge Request (MR) in GitLab via the GUI?**
 - Step 1: Go to your GitLab project and click on “Merge Requests” in the left menu.  
 - Step 2: Click on “New merge request”.  
-- Step 3: Select the source branch (the one you want to merge) and the target branch (usually main).  
+- Step 3: Select the source branch (the one you want to merge) and the target branch (usually main).
+![image alt](image/8.3.png)
+  
 - Step 4: Click “Compare branches and continue”.  
 - Step 5: Fill in the title, description, and optionally assign reviewers or labels.  
 - Step 6: Click “Create merge request”.
@@ -40,6 +44,7 @@
 - Step 2: Select the branch you want to delete.  
 - Step 3: If it has already been merged, click “Delete branch” from the three dots on the right side.  
 - Step 4: A confirmation message will appear, click “Yes, delete branch.”
+![image alt](image/8.4.png)
 
 ## Assignment 2: Repository Operations
 
@@ -53,30 +58,36 @@
 git clone https://gitlab.com/vishnuraj784-group/assignment.git
 cd assignment
 ```
- 
+![image alt](image/8.5.png)
+
 **2. Create a new branch for a specific feature or bug fix.**
 ```bash
 git checkout -b feature/my-feature
 ```
-  
+![image alt](image/8.6.png)
+
+
 **3. Make changes in the new branch.**
 ```bash
 echo "My GitLab feature" > feature.txt
 git add feature.txt
 git commit -m "Add feature.txt in feature/my-feature"
 ```
+![image alt](image/8.7.png)
 
 **4. Push the branch to the remote repository.**
 ```bash
 git push -u origin feature/my-feature
 ```
+![image alt](image/8.8.png)
  
 ### Merge and Conflict Resolution: 
 **1. Merge the changes from the feature branch into the main branch.**
 - Step 1: Go to your GitLab project and click on “Merge Requests” in the left menu.
 - Step 2: Click on “New merge request”.
 - Step 3: Choose feature/my-feature → main.
- 
+ ![image alt](image/8.9.png)
+
 - Step 4: Submit the merge request, then Merge it using the UI or command line.
   
 **2. Simulate a merge conflict intentionally (modify the same line in both branches).**
@@ -90,6 +101,7 @@ echo "Line to cause conflict" > conflict.txt
 git add conflict.txt
 git commit -m "Edit line in conflict.txt from main"
 ```
+![image alt](image/8.10.png)
 
 B) In a new branch
 ```bash
@@ -98,12 +110,14 @@ echo "Conflicting change" > conflict.txt
 git add conflict.txt
 git commit -m "Conflicting change from conflict-branch"
 ```
+![image alt](image/8.11.png)
 
 C) Try merging into main:
 ```bash
 git checkout main
 git merge conflict_branch
 ```
+![image alt](image/8.12.png)
  
 **3. Resolve the conflict and complete the merge.**
 ```bash
@@ -131,6 +145,7 @@ git checkout main
 git pull
 git checkout -b rebase-branch
 ```
+![image alt](image/8.13.png)
 
 B. Make some changes.
 ```bash
@@ -138,12 +153,14 @@ echo "Change for rebase" > rebase.txt
 git add rebase.txt
 git commit -m "Add change for rebase"
 ```
+![image alt](image/8.14.png)
 
 C. Rebase the new branch onto the main branch.
 ```bash
 git checkout rebase-branch
 git rebase main
 ```
+![image alt](image/8.15.png)
 
 D. Resolve any conflicts that may arise during the rebase.
 - Step 1: Git will pause on a conflict.
@@ -157,6 +174,7 @@ git rebase –continue
 ```bash
 git push --force origin rebase-branch
 ```
+![image alt](image/8.16.png)
  
 ## Assignment 3: Collaboration
 **Fork and Pull Request:**
@@ -170,6 +188,7 @@ git push --force origin rebase-branch
 git clone https://github.com/vishnuraj96/Assignment.git
 cd Assignment
 ```
+![image alt](image/8.17.png)
 
 **3. Create a new branch and make changes.**
 ```bash
@@ -177,16 +196,19 @@ git checkout -b feature
 git add .
 git commit -m "Add new feature or fix"
 ```
+![image alt](image/8.18.png)
  
 **4. Push the branch to your fork.**
 ```bash
 git push origin feature
 ```
+![image alt](image/8.19.png)
  
 **5. Open a pull request to merge your changes into the original repository.**
 - Step 1: Go to your forked repo on GitHub.
 - Step 2: Start the Pull Request, click “Contribute” → “Open pull request”.
 - Step 3: Fill in Pull Request Details like Title and Description. Click the “Create pull request”
+![image alt](image/8.20.png)
  
 ## Code Review: 
 **1. Review a pull request in a repository.**
@@ -222,20 +244,28 @@ git push origin feature
 git clone https://github.com/vishnuraj96/workflow.git
 cd workflow
 git checkout -b develop
-``` 
+```
+![image alt](image/8.21.png)
+
 - Step 2: Create a Branch.
 ```bash
 git checkout -b add-user
 ```
+![image alt](image/8.22.png)
+
 - Step 3: Make changes and commit.
 ```bash
 git add .
 git commit -m "Add user authentication"
 ```
+![image alt](image/8.23.png)
+
 - Step 4: Push branch
 ```bash
 git push -u origin add-user
 ```
+![image alt](image/8.24.png)
+
 - Step 5:  Pull Request (PR)
 	- Go to your forked repo on GitHub.
 	- Start the Pull Request, click “Contribute” → “Open pull request”.
