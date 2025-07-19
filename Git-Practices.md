@@ -52,29 +52,30 @@
 - Step 1: Go to your GitLab project and click on “Repository” from the “Code” dropdown in the left menu.
 - Step 2: Click Code and copy the HTTPS or SSH URL.
 - Step 3: In terminal:
-	```bash
- 	git clone https://gitlab.com/vishnuraj784-group/assignment.git
-	cd assignment
- 	```
+```bash
+git clone https://gitlab.com/vishnuraj784-group/assignment.git
+cd assignment
+```
  
 **2. Create a new branch for a specific feature or bug fix.**
-	```bash
- 	git checkout -b feature/my-feature
- 	```
+
+```bash
+git checkout -b feature/my-feature
+```
   
 **3. Make changes in the new branch.**
 
-	```bash
- 	echo "My GitLab feature" > feature.txt
-	git add feature.txt
-	git commit -m "Add feature.txt in feature/my-feature"
- 	```
+```bash
+echo "My GitLab feature" > feature.txt
+git add feature.txt
+git commit -m "Add feature.txt in feature/my-feature"
+```
 
 **4. Push the branch to the remote repository.**
 
-	```bash
-	git push -u origin feature/my-feature
- 	```
+```bash
+git push -u origin feature/my-feature
+```
  
 ### Merge and Conflict Resolution: 
 **1. Merge the changes from the feature branch into the main branch.**
@@ -110,7 +111,9 @@ git merge conflict_branch
  
 3. Resolve the conflict and complete the merge.
 ```bash
-	vim conflict.txt (Open conflict.txt)
+vim conflict.txt (Open conflict.txt)
+```
+```bash
 <<<<<<< HEAD
 Line to cause conflict
 =======
@@ -126,6 +129,7 @@ git commit
 
 Rebase: 
 1. Create a new branch.
+
 ```bash
 git checkout main
 git pull
@@ -133,22 +137,33 @@ git checkout -b rebase-branch
 ```
 
 3. Make some changes.
+   
+```bash
 echo "Change for rebase" > rebase.txt
 git add rebase.txt
 git commit -m "Add change for rebase"
- 
+```
+
 4. Rebase the new branch onto the main branch.
+
+```bash
 git checkout rebase-branch
 git rebase main
- 
+```
+
 5. Resolve any conflicts that may arise during the rebase.
-Step 1: Git will pause on a conflict.
-Step 2: Open and fix the conflict.
-Step 3: 
-	git add rebase.txt
+
+- Step 1: Git will pause on a conflict.
+- Step 2: Open and fix the conflict.
+- Step 3:
+```bash
+git add rebase.txt
 git rebase –continue
-	Step 4: Push Rebased Branch to GitLab
-		git push --force origin rebase-branch
+```
+- Step 4: Push Rebased Branch to GitLab
+```bash
+git push --force origin rebase-branch
+```
  
 Assignment 3: Collaboration
 Fork and Pull Request: 
