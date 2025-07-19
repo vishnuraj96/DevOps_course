@@ -52,10 +52,10 @@
 
 **1. Clone a remote Git repository.**
 - Step 1: Go to your GitLab project and click on “Repository” from the “Code” dropdown in the left menu.
--	Step 2: Click Code and copy the HTTPS or SSH URL.
--	Step 3: In terminal:
-	-	git clone https://gitlab.com/vishnuraj784-group/assignment.git
-   - cd assignment
+- Step 2: Click Code and copy the HTTPS or SSH URL.
+- Step 3: In terminal:
+	git clone https://gitlab.com/vishnuraj784-group/assignment.git
+     	cd assignment
  
 2. Create a new branch for a specific feature or bug fix.
 	git checkout -b feature/my-feature
