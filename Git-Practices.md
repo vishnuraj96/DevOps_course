@@ -129,7 +129,7 @@ git add conflict.txt
 git commit
 ```
 
-**Rebase:**
+**Rebase:** 
 A. Create a new branch.
 
 ```bash
